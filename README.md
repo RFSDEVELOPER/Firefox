@@ -41,9 +41,15 @@ Script PowerShell que automatiza a manutenção do Windows e do Firefox: desativ
 powershell -ExecutionPolicy Bypass -File .\Manutencao_Windows_Firefox.ps1
 ```
 
-4. Ao terminar, **reinicie o computador**.
+4. Ou execute direto do GitHub (PowerShell como administrador):
 
-> O arquivo usa codificação **UTF-8 com BOM** para que o PowerShell 5.1 exiba os acentos corretamente. Mantenha essa codificação ao editar.
+```powershell
+irm https://raw.githubusercontent.com/RFSDEVELOPER/Firefox/refs/heads/main/Manutencao_Windows_Firefox.ps1 | iex
+```
+
+5. Ao terminar, **reinicie o computador**.
+
+> O arquivo é salvo em **UTF-8 sem BOM**, o que permite executá-lo direto da internet. Ao rodar o arquivo local no PowerShell 5.1, os acentos das mensagens podem aparecer distorcidos (não afeta o funcionamento).
 
 ---
 
